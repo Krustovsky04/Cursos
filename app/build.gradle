@@ -15,11 +15,11 @@ android {
         applicationId "info.cubanapp.cursos"
         minSdk 16
         targetSdk 33
-        versionCode 79
-        versionName "1.0.1"
+        versionCode 1
+        versionName "1.0.0"
         resConfigs "en", "es"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        multiDexEnabled true
+        multiDexEnabled false
     }
 
     buildTypes {
@@ -30,7 +30,7 @@ android {
             debuggable true
             jniDebuggable true
             renderscriptDebuggable true
-            multiDexEnabled true
+            multiDexEnabled false
         }
         release {
             crunchPngs true
@@ -123,4 +123,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
 }
